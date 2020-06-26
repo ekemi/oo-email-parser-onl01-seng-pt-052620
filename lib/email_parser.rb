@@ -19,6 +19,9 @@ class EmailAddressParser
 
 elsif @email.include?(" ")
   return @email.split(" ")
+
+elsif @email.include?(",  ")
+  return @email.split(",  ")
   end
 end
 end
