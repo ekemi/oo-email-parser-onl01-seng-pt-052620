@@ -23,8 +23,8 @@ elsif @email.include?(" ")
 elsif @email.include?(",")
   x= @email.split(",")
    return x.uniq
- 
-  
+
+
   end
 end
 end
