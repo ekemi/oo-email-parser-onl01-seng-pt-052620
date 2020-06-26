@@ -13,11 +13,11 @@ class EmailAddressParser
 
   end
   def parse
-    if @email.include(", ")
+    if @email.include?(", ")
 
   return @email.split(", ")
 
-elsif @email.include(" ")
+elsif @email.include?(" ")
   return @email.split(" ")
   end
 end
