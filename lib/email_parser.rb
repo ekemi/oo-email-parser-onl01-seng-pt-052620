@@ -13,18 +13,8 @@ class EmailAddressParser
 
   end
   def parse
-    if @email.include?(", ")
-
-  return @email.split(", ")
-
-elsif @email.include?(" ")
-  return @email.split(" ")
-
-elsif @email.include?(", ")
-  x= @email.split(", ")
-   return x.uniq
+    @email.split(/\s|,/).uniq
 
 
   end
-end
 end
