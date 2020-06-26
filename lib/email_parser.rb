@@ -13,6 +13,6 @@ class EmailAddressParser
 
   end
   def parse
-  return @email.split(", ")
+  return @email.split(" ")
   end
 end
