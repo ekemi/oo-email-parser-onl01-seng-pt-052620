@@ -20,8 +20,8 @@ class EmailAddressParser
 elsif @email.include?(" ")
   return @email.split(" ")
 
-elsif @email.include?(",")
-  x= @email.split(",")
+elsif @email.include?(", ")
+  x= @email.split(", ")
    return x.uniq
 
 
